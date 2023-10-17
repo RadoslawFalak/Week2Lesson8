@@ -4,6 +4,6 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Exercise2.EvenNumbers();
+        Exercise3.Fibonacci();
     }
 }
