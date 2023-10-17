@@ -4,6 +4,6 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Exercise1.HowManyNumbers();
+        Exercise2.EvenNumbers();
     }
 }
