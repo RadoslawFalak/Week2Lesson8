@@ -4,6 +4,6 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Exercise6.Fractions();
+        Exercise7.Diamond();
     }
 }
