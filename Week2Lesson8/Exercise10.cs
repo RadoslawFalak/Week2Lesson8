@@ -23,7 +23,6 @@ namespace Week2Lesson8
             }
             return a;
         }
-
         public static void LeastCommonMultiple() 
         {
             int numberOne;
