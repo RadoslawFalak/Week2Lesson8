@@ -4,7 +4,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Exercise10.LeastCommonMultiple();
+        Exercise7.Diamond();
         
     }
 }

@@ -14,45 +14,107 @@ namespace Week2Lesson8
             int userNumber;
             string input = Console.ReadLine();
             int.TryParse(input, out userNumber);
+            int p = 2;
+            int q = 0;
+            int z = 2;
 
-            for (int i = 1; i <= userNumber; i++)
-            {               
-                for (int j = 1; j <= userNumber; j++)
-                {
-                   int leftSpace= (userNumber - i) / 2;
-                   int rightSpace = ((userNumber - i) / 2) + i;
-                    
-                    if (leftSpace >= j || rightSpace < j)
-                    {
-                        Console.Write("-");
-                    }
-                    else
-                    {
-                        Console.Write("*");
-                    }
-                    
-                }
-                Console.WriteLine("");
-            }
-            for (int i = userNumber - 1; i >= 1; i--)
+            for (int k = 0; k < userNumber / 2 + 1; k++)
             {
-                for (int j = 1; j <= userNumber; j++)
+                for (int i = 0; i < userNumber / 2 - k; i++)
                 {
-                    int leftSpace = (userNumber - i) / 2;
-                    int rightSpace = ((userNumber - i) / 2) + i;
-
-                    if (leftSpace >= j || rightSpace < j)
-                    {
-                        Console.Write("-");
-                    }
-                    else
+                    Console.Write(" ");
+                }
+                if (k == 0)
+                {
+                    Console.Write("*");
+                }
+                if (k != 0)
+                {
+                    for (int j = 0; j < k + p; j++)
                     {
                         Console.Write("*");
                     }
-
+                    p += 1;
                 }
-                Console.WriteLine("");
+                Console.WriteLine();
             }
+            for (int k = userNumber / 2; k > 0; k--)
+            {
+                for (int i = 0; i < 1 + q; i++)
+                {
+                    Console.Write(" ");
+                }
+                q++;
+                if (k == 1)
+                {
+                    Console.Write("*");
+                }
+                if (k != 1)
+                {
+                    for (int j = 0; j < userNumber - z; j++)
+                    {
+                        Console.Write("*");
+                    }
+                    z += 2;
+                }
+                Console.WriteLine();
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /*for (int i = 1; i <= userNumber; i++)
+            {               
+              for (int j = 1; j <= userNumber; j++)
+              {
+                      int leftSpace= (userNumber - i) / 2;
+                      int rightSpace = ((userNumber - i) / 2) + i;
+
+                  if (leftSpace >= j || rightSpace < j)
+                  {
+                      Console.Write("-");
+                  }
+                  else
+                  {
+                      Console.Write("*");
+                  }  
+              }
+              Console.WriteLine("");
+            }
+          for (int i = userNumber - 1; i >= 1; i--)
+          {
+              for (int j = 1; j <= userNumber; j++)
+              {
+                  int leftSpace = (userNumber - i) / 2;
+                  int rightSpace = ((userNumber - i) / 2) + i;
+
+                  if (leftSpace >= j || rightSpace < j)
+                  {
+                      Console.Write("-");
+                  }
+                  else
+                  {
+                      Console.Write("*");
+                  }
+              }
+              Console.WriteLine("");
+          } */
         }
     }
 }

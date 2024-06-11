@@ -8,17 +8,24 @@ namespace Week2Lesson8
 {
     internal class Exercise1
     {
-        public static void HowManyNumbers()
+        public static void HowManyPrimeNumbers()
         {
-            int a = 0;
-            for (int i = 0; i <= 100; i++)
+            int n = 0;
+            for(int i = 2; i <= 100; i++)
             {
-                if (i > 1 && i %1 == 0 && i %i == 0)
+                for (int j = 2; j < i; j++)
                 {
-                    a++;
-                }             
+                    if (i % j == 0)
+                    {
+                        n++;
+                    }
+                }
+                if (n == 0)
+                {
+                    Console.WriteLine(i);  
+                }
+                n = 0;
             }
-            Console.WriteLine(a);
         }
     }
 }

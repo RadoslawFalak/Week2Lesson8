@@ -31,7 +31,7 @@ namespace Week2Lesson8
             Console.Write("Podaj pierwsza liczbe: ");
             string input = Console.ReadLine();
             int.TryParse(input, out numberOne);
-            Console.Write("Podaj pierwsza liczbe: ");
+            Console.Write("Podaj druga liczbe: ");
             input = Console.ReadLine();
             int.TryParse(input, out numberTwo);
             int leastCommonDivisor = Exercise10.LeastCommonDivisor(numberOne, numberTwo);
